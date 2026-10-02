@@ -1,0 +1,6 @@
+{
+  "name": "CLEAR MALL 555",
+  "description": "CLEAR MALL 555 - Modern multi-vendor online shopping mall with MTN Mobile Money payments, seller stores, product video/photo uploads, admin control center, and rapid delivery tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

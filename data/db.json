@@ -1,0 +1,512 @@
+{
+  "settings": {
+    "mallName": "CLEAR MALL 555",
+    "hotlinePhone": "0798010110",
+    "hotlineInternational": "+250798010110",
+    "whatsappUrl": "https://wa.me/250798010110",
+    "mtnPaymentCodeTemplate": "*182*8*1*2262742*AMOUNT#",
+    "mtnMerchantNumber": "2262742",
+    "defaultCommissionPercent": 5,
+    "deliveryZones": [
+      {
+        "id": "kigali-urban",
+        "name": "Kigali Urban Delivery",
+        "description": "Nyarugenge, Gasabo, and Kicukiro sectors (Standard)",
+        "feeRwf": 2000,
+        "estimatedDelivery": "Same Day / 24 Hours"
+      },
+      {
+        "id": "kigali-express",
+        "name": "Kigali VIP 2-Hour Express",
+        "description": "Direct courier delivery directly to your door in Kigali",
+        "feeRwf": 3500,
+        "estimatedDelivery": "Within 2 Hours"
+      },
+      {
+        "id": "provincial-rwanda",
+        "name": "Provincial Rwanda Express",
+        "description": "Musanze, Rubavu, Huye, Rwamagana, Muhanga, Rusizi",
+        "feeRwf": 5000,
+        "estimatedDelivery": "24 - 48 Hours"
+      },
+      {
+        "id": "store-pickup",
+        "name": "Self-Pickup at Clear Mall 555 Hub",
+        "description": "Clear Mall 555 Central Station, CBD Kigali",
+        "feeRwf": 0,
+        "estimatedDelivery": "Immediate Ready"
+      }
+    ],
+    "currencies": {
+      "base": "RWF",
+      "rates": {
+        "RWF": 1,
+        "USD": 0.000704,
+        "EUR": 0.000645
+      }
+    }
+  },
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Clear Mall 555 Director",
+      "email": "admin@clearmall.com",
+      "phone": "0798010110",
+      "role": "admin",
+      "createdAt": "2026-10-02T07:46:46.149Z"
+    },
+    {
+      "id": "usr-seller-1",
+      "name": "Kigali Prime Tech Ltd",
+      "email": "tech@clearmall.com",
+      "phone": "0788123456",
+      "role": "seller",
+      "shopId": "shop-tech-1",
+      "createdAt": "2026-10-02T07:46:46.149Z"
+    },
+    {
+      "id": "usr-seller-2",
+      "name": "555 Elite Fashion & Sneakers",
+      "email": "fashion@clearmall.com",
+      "phone": "0788654321",
+      "role": "seller",
+      "shopId": "shop-fashion-2",
+      "createdAt": "2026-10-02T07:46:46.149Z"
+    },
+    {
+      "id": "usr-customer-1",
+      "name": "Clement Ishimwe",
+      "email": "ishimweclement537@gmail.com",
+      "phone": "0798010110",
+      "role": "customer",
+      "createdAt": "2026-10-02T07:46:46.149Z"
+    }
+  ],
+  "shops": [
+    {
+      "id": "shop-tech-1",
+      "ownerId": "usr-seller-1",
+      "ownerName": "Kigali Prime Tech Ltd",
+      "name": "Clear Tech & Electronics",
+      "slug": "clear-tech-electronics",
+      "description": "Premier authorized distributor of flagship smartphones, smartwatches, high-fidelity wireless audio, and laptop computing gear in Rwanda.",
+      "logo": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=200&q=80",
+      "banner": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+      "phone": "0788123456",
+      "address": "CLEAR MALL 555, Floor 2, Tech Plaza, Kigali",
+      "rating": 4.9,
+      "totalSales": 142,
+      "commissionRate": 5,
+      "status": "active",
+      "createdAt": "2026-09-02T07:46:46.149Z"
+    },
+    {
+      "id": "shop-fashion-2",
+      "ownerId": "usr-seller-2",
+      "ownerName": "555 Elite Fashion & Sneakers",
+      "name": "555 Luxury Streetwear & Kicks",
+      "slug": "555-luxury-streetwear",
+      "description": "Curated original footwear, limited-edition sneakers, apparel, and premium accessories tailored for Rwandan urban elegance.",
+      "logo": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80",
+      "banner": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+      "phone": "0788654321",
+      "address": "CLEAR MALL 555, Floor 1, Avenue 4, Kigali",
+      "rating": 4.8,
+      "totalSales": 98,
+      "commissionRate": 5,
+      "status": "active",
+      "createdAt": "2026-09-07T07:46:46.149Z"
+    },
+    {
+      "id": "shop-beauty-3",
+      "ownerId": "usr-admin-1",
+      "ownerName": "Clear Mall 555 Director",
+      "name": "Glow Rwanda Luxury Fragrance & Beauty",
+      "slug": "glow-rwanda-beauty",
+      "description": "Authentic French & Arabian luxury perfumes, clinical skincare serums, and organic dermatological cosmetics.",
+      "logo": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=200&q=80",
+      "banner": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1200&q=80",
+      "phone": "0798010110",
+      "address": "CLEAR MALL 555, Ground Floor, Atrium, Kigali",
+      "rating": 4.95,
+      "totalSales": 87,
+      "commissionRate": 5,
+      "status": "active",
+      "createdAt": "2026-09-12T07:46:46.149Z"
+    },
+    {
+      "id": "shop-auto-4",
+      "ownerId": "usr-admin-1",
+      "ownerName": "Clear Mall 555 Director",
+      "name": "555 Prime Motors & Car Showroom",
+      "slug": "555-prime-motors-rwanda",
+      "description": "Direct importer of certified luxury SUVs, hybrid crossover vehicles, and premium cars in Kigali. Full Rwanda tax clearance, warranty, and registration assistance.",
+      "logo": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=200&q=80",
+      "banner": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      "phone": "0798010110",
+      "address": "CLEAR MALL 555, Auto Pavilion, Boulevard de l’Umuganda, Kigali",
+      "rating": 4.98,
+      "totalSales": 24,
+      "commissionRate": 5,
+      "status": "active",
+      "createdAt": "2026-09-17T07:46:46.149Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-car-5",
+      "shopId": "shop-auto-4",
+      "shopName": "555 Prime Motors & Car Showroom",
+      "name": "Toyota Land Cruiser Prado TX-L Luxury SUV (2024)",
+      "slug": "toyota-land-cruiser-prado-tx-l-2024",
+      "description": "Flagship 7-seater luxury SUV designed for Rwanda roads and overland travel. Powered by a refined 2.8L D-4D Turbo Diesel engine paired with full-time 4WD, kinetic dynamic suspension, multi-terrain monitor, panoramic sunroof, and premium cooled leather seating.",
+      "category": "Cars & Automotive",
+      "priceRwf": 68500000,
+      "originalPriceRwf": 73000000,
+      "stock": 2,
+      "images": [
+        "/src/assets/images/product_suv_luxury_car_1790942254000.jpg"
+      ],
+      "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-car-driving-through-a-modern-city-at-night-42171-large.mp4",
+      "rating": 5,
+      "reviewsCount": 16,
+      "featured": true,
+      "specs": {
+        "Year Model": "2024 Brand New Import",
+        "Engine": "2.8L D-4D 4-Cylinder Turbo Diesel (204 HP)",
+        "Transmission": "6-Speed Super ECT Automatic 4WD",
+        "Fuel Economy": "7.9 L / 100km",
+        "Seating": "7 Seats Premium Perforated Leather",
+        "Registration": "Kigali Registration Ready (All Customs Duty Paid)",
+        "Warranty": "3 Years / 100,000 km Warranty"
+      },
+      "status": "active",
+      "createdAt": "2026-10-02T11:58:00.000Z"
+    },
+    {
+      "id": "prod-1790942146425",
+      "shopId": "shop-auto-4",
+      "shopName": "555 Prime Motors & Car Showroom",
+      "name": "Toyota RAV4 Hybrid Limited AWD",
+      "slug": "toyota-rav4-hybrid-limited-awd",
+      "description": "The best RAV4 Kigali edition. Exceptional fuel efficiency, electronic on-demand all-wheel drive, spacious luxury interior, Apple CarPlay, and Toyota Safety Sense.",
+      "category": "Cars & Automotive",
+      "priceRwf": 38500000,
+      "originalPriceRwf": 42000000,
+      "stock": 4,
+      "images": [
+        "/uploads/1790942119244-xuhpc0.webp",
+        "/src/assets/images/product_suv_luxury_car_1790942254000.jpg"
+      ],
+      "rating": 5,
+      "reviewsCount": 8,
+      "featured": true,
+      "specs": {
+        "Year": "2023",
+        "Engine": "2.5L 4-Cylinder Hybrid (219 hp)",
+        "Transmission": "eCVT All-Wheel Drive",
+        "Fuel Economy": "4.8 L / 100km",
+        "Condition": "Certified Kigali Import (Duty Paid)",
+        "Warranty": "1 Year Clear Mall Warranty"
+      },
+      "status": "active",
+      "createdAt": "2026-10-02T11:55:46.425Z"
+    },
+    {
+      "id": "prod-phone-1",
+      "shopId": "shop-tech-1",
+      "shopName": "Clear Tech & Electronics",
+      "name": "Titanium Ultra 5G Pro Flagship Smartphone (256GB)",
+      "slug": "titanium-ultra-5g-pro-flagship",
+      "description": "Ultra-thin aerospace titanium frame, 6.8\" 120Hz LTPO Dynamic AMOLED display, 200MP pro-grade cinematic camera system, and ultra-fast 65W charging. Dual SIM 5G compatible across all Rwandan carriers including MTN and Airtel.",
+      "category": "Electronics",
+      "priceRwf": 685000,
+      "originalPriceRwf": 750000,
+      "stock": 16,
+      "images": [
+        "/src/assets/images/product_smartphone_flagship_1790926862084.jpg"
+      ],
+      "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-holding-a-modern-smartphone-with-a-green-screen-41221-large.mp4",
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "featured": true,
+      "specs": {
+        "Storage": "256GB UFS 4.0",
+        "RAM": "12GB LPDDR5X",
+        "Processor": "Snapdragon 8 Gen 3",
+        "Display": "6.8\" 120Hz LTPO AMOLED",
+        "Battery": "5000 mAh (65W Fast Charge)",
+        "Warranty": "1 Year Full Clear Mall Warranty"
+      },
+      "status": "active",
+      "createdAt": "2026-09-17T07:46:46.149Z"
+    },
+    {
+      "id": "prod-sneakers-2",
+      "shopId": "shop-fashion-2",
+      "shopName": "555 Luxury Streetwear & Kicks",
+      "name": "CLEAR 555 Apex Edition Lifestyle Sneakers",
+      "slug": "clear-555-apex-lifestyle-sneakers",
+      "description": "Designed exclusively for CLEAR MALL 555 with vibrant orange and deep midnight blue overlays. Ultra-cushioned responsive midsole, breathable composite mesh upper, and high-traction rubber outsole engineered for long-lasting comfort.",
+      "category": "Fashion & Shoes",
+      "priceRwf": 58000,
+      "originalPriceRwf": 72000,
+      "stock": 35,
+      "images": [
+        "/src/assets/images/product_designer_sneakers_1790926873469.jpg"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 42,
+      "featured": true,
+      "specs": {
+        "Available Sizes": "EU 39, 40, 41, 42, 43, 44, 45",
+        "Colorway": "Clear Orange / Midnight Navy / Arctic White",
+        "Material": "Perforated Leather & Composite Mesh",
+        "Sole": "Responsive Nitrogen Infused EVA"
+      },
+      "status": "active",
+      "createdAt": "2026-09-20T07:46:46.149Z"
+    },
+    {
+      "id": "prod-watch-3",
+      "shopId": "shop-tech-1",
+      "shopName": "Clear Tech & Electronics",
+      "name": "Apex Pro OLED Smartwatch & Hi-Res Wireless ANC Earbuds Duo",
+      "slug": "apex-pro-smartwatch-and-wireless-earbuds-bundle",
+      "description": "All-in-one connectivity bundle. The Apex Pro Smartwatch features GPS navigation, continuous heart rate and SpO2 tracking, and Bluetooth call speaker. Includes high-fidelity active noise-canceling earbuds with 36-hour battery case.",
+      "category": "Electronics",
+      "priceRwf": 89000,
+      "originalPriceRwf": 110000,
+      "stock": 24,
+      "images": [
+        "/src/assets/images/product_smartwatch_audio_1790926884217.jpg"
+      ],
+      "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-close-up-of-a-smartwatch-on-a-mans-wrist-41584-large.mp4",
+      "rating": 4.95,
+      "reviewsCount": 29,
+      "featured": true,
+      "specs": {
+        "Watch Display": "1.96\" Sapphire AMOLED Always-On",
+        "Water Resistance": "5 ATM / 50 meters",
+        "Battery Life": "Up to 10 days on single charge",
+        "Earbuds ANC": "Up to 42dB Hybrid Noise Cancellation",
+        "Compatibility": "iOS & Android (MTN MoMo notifications compatible)"
+      },
+      "status": "active",
+      "createdAt": "2026-09-22T07:46:46.149Z"
+    },
+    {
+      "id": "prod-perfume-4",
+      "shopId": "shop-beauty-3",
+      "shopName": "Glow Rwanda Luxury Fragrance & Beauty",
+      "name": "Amber Oud Royale Eau De Parfum (100ml)",
+      "slug": "amber-oud-royale-eau-de-parfum",
+      "description": "An intoxicating masterwork of sweet Madagascar vanilla, rich Cambodian agarwood, velvety amber, and subtle notes of bergamot and pink pepper. Boasts over 18 hours of projection and luxurious trail.",
+      "category": "Beauty & Fragrance",
+      "priceRwf": 65000,
+      "originalPriceRwf": 80000,
+      "stock": 40,
+      "images": [
+        "/src/assets/images/product_beauty_perfume_1790926895803.jpg"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 51,
+      "featured": true,
+      "specs": {
+        "Concentration": "Eau De Parfum (25% Oil Essence)",
+        "Volume": "100ml / 3.4 fl oz",
+        "Origin": "Artisanal Blend",
+        "Longevity": "18+ Hours"
+      },
+      "status": "active",
+      "createdAt": "2026-09-24T07:46:46.149Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1790941999224",
+      "orderNumber": "CLM-555-9689",
+      "customerId": "usr-seller-1",
+      "customerName": "Kigali Prime Tech Ltd",
+      "customerEmail": "tech@clearmall.com",
+      "customerPhone": "0788123456",
+      "deliveryAddress": {
+        "fullName": "Kigali Prime Tech Ltd",
+        "phone": "0788123456",
+        "email": "tech@clearmall.com",
+        "cityProvince": "Kigali City",
+        "district": "Gasabo",
+        "streetAddress": "KG 15 Ave, Kimihurura",
+        "deliveryNotes": "Call me before coming"
+      },
+      "deliveryZone": {
+        "id": "kigali-urban",
+        "name": "Kigali Urban Delivery",
+        "description": "Nyarugenge, Gasabo, Kicukiro",
+        "feeRwf": 2000,
+        "estimatedDelivery": "Same Day / 24 Hours"
+      },
+      "items": [
+        {
+          "productId": "prod-phone-1",
+          "productName": "Titanium Ultra 5G Pro Flagship Smartphone (256GB)",
+          "shopId": "shop-tech-1",
+          "shopName": "Clear Tech & Electronics",
+          "priceRwf": 685000,
+          "quantity": 1,
+          "image": "/src/assets/images/product_smartphone_flagship_1790926862084.jpg"
+        }
+      ],
+      "subtotalRwf": 685000,
+      "deliveryFeeRwf": 2000,
+      "totalRwf": 687000,
+      "displayCurrency": "RWF",
+      "displayTotal": 687000,
+      "paymentMethod": "mtn_momo",
+      "paymentStatus": "unpaid",
+      "momoDetails": {
+        "code": "*182*8*1*2262742*687000#",
+        "notes": "Dial *182*8*1*2262742*687000# to complete payment to merchant 2262742"
+      },
+      "orderStatus": "pending_payment",
+      "timeline": [
+        {
+          "status": "pending_payment",
+          "label": "Order Created & MTN MoMo Code Ready",
+          "timestamp": "2026-10-02T11:53:19.224Z",
+          "note": "USSD code *182*8*1*2262742*687000# generated for total 687,000 RWF"
+        }
+      ],
+      "createdAt": "2026-10-02T11:53:19.247Z",
+      "updatedAt": "2026-10-02T11:53:19.247Z"
+    },
+    {
+      "id": "ord-1790927223260",
+      "orderNumber": "CLM-555-3870",
+      "customerId": "guest-1790927223260",
+      "customerName": "Test Buyer",
+      "customerEmail": "customer@clearmall.com",
+      "customerPhone": "0798010110",
+      "deliveryAddress": {
+        "fullName": "Test Buyer",
+        "phone": "0798010110",
+        "cityProvince": "Kigali City",
+        "district": "Gasabo",
+        "streetAddress": "KG 9 Ave"
+      },
+      "deliveryZone": {
+        "feeRwf": 2000
+      },
+      "items": [
+        {
+          "productId": "prod-phone-1",
+          "productName": "Phone",
+          "shopId": "shop-tech-1",
+          "shopName": "Tech",
+          "priceRwf": 685000,
+          "quantity": 1
+        }
+      ],
+      "subtotalRwf": 685000,
+      "deliveryFeeRwf": 2000,
+      "totalRwf": 687000,
+      "displayCurrency": "RWF",
+      "displayTotal": 687000,
+      "paymentMethod": "mtn_momo",
+      "paymentStatus": "unpaid",
+      "momoDetails": {
+        "code": "*182*8*1*2262742*687000#",
+        "notes": "Dial *182*8*1*2262742*687000# to complete payment to merchant 2262742"
+      },
+      "orderStatus": "pending_payment",
+      "timeline": [
+        {
+          "status": "pending_payment",
+          "label": "Order Created & MTN MoMo Code Ready",
+          "timestamp": "2026-10-02T07:47:03.260Z",
+          "note": "USSD code *182*8*1*2262742*687000# generated for total 687,000 RWF"
+        }
+      ],
+      "createdAt": "2026-10-02T07:47:03.299Z",
+      "updatedAt": "2026-10-02T07:47:03.299Z"
+    },
+    {
+      "id": "ord-555-101",
+      "orderNumber": "CLM-555-1001",
+      "customerId": "usr-customer-1",
+      "customerName": "Clement Ishimwe",
+      "customerEmail": "ishimweclement537@gmail.com",
+      "customerPhone": "0798010110",
+      "deliveryAddress": {
+        "fullName": "Clement Ishimwe",
+        "phone": "0798010110",
+        "cityProvince": "Kigali City",
+        "district": "Gasabo",
+        "streetAddress": "KG 9 Ave, Kimihurura, House 24",
+        "deliveryNotes": "Call upon arrival at the gate."
+      },
+      "deliveryZone": {
+        "id": "kigali-urban",
+        "name": "Kigali Urban Delivery",
+        "description": "Nyarugenge, Gasabo, and Kicukiro sectors (Standard)",
+        "feeRwf": 2000,
+        "estimatedDelivery": "Same Day / 24 Hours"
+      },
+      "items": [
+        {
+          "productId": "prod-sneakers-2",
+          "productName": "CLEAR 555 Apex Edition Lifestyle Sneakers",
+          "shopId": "shop-fashion-2",
+          "shopName": "555 Luxury Streetwear & Kicks",
+          "priceRwf": 58000,
+          "quantity": 1,
+          "image": "/src/assets/images/product_designer_sneakers_1790926873469.jpg"
+        }
+      ],
+      "subtotalRwf": 58000,
+      "deliveryFeeRwf": 2000,
+      "totalRwf": 60000,
+      "displayCurrency": "RWF",
+      "displayTotal": 60000,
+      "paymentMethod": "mtn_momo",
+      "paymentStatus": "verified",
+      "momoDetails": {
+        "code": "*182*8*1*2262742*60000#",
+        "customerMomoPhone": "0798010110",
+        "transactionRef": "MTN-TX-89241512",
+        "submittedAt": "2026-10-01T07:46:46.150Z",
+        "verifiedAt": "2026-10-01T08:46:46.150Z",
+        "verifiedBy": "Clear Mall 555 Director"
+      },
+      "orderStatus": "shipped",
+      "timeline": [
+        {
+          "status": "pending_payment",
+          "label": "Order Placed & MTN MoMo Code Generated",
+          "timestamp": "2026-10-01T07:46:46.150Z",
+          "note": "USSD *182*8*1*2262742*60000# prepared for customer"
+        },
+        {
+          "status": "payment_submitted",
+          "label": "MTN Payment Proof Received",
+          "timestamp": "2026-10-01T08:16:46.150Z",
+          "note": "Customer submitted MTN Ref: MTN-TX-89241512"
+        },
+        {
+          "status": "processing",
+          "label": "Payment Verified & Order Processing",
+          "timestamp": "2026-10-01T08:46:46.150Z",
+          "note": "Payment verified with MTN merchant account 2262742"
+        },
+        {
+          "status": "shipped",
+          "label": "Dispatched with Clear Mall Courier",
+          "timestamp": "2026-10-02T03:46:46.150Z",
+          "note": "Courier en route to Gasabo"
+        }
+      ],
+      "createdAt": "2026-10-01T07:46:46.150Z",
+      "updatedAt": "2026-10-02T03:46:46.150Z"
+    }
+  ]
+}
